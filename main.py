@@ -1,4 +1,6 @@
 import time
+from produtos import valores, nome, valor, estoque
+
 # Inicio
 print("--Sistema de Cadastro de Produtos--")
 opcaoIniciar = input("1 - Cadastrar produto \n 2 - Buscar produto \n 3 - Editar produtos \n 4 - Excluir produto \n 5 - Sair \n")
@@ -27,9 +29,8 @@ if opcaoIniciar == "1":
 if opcaoIniciar == "2":
     buscarProduto = input("Qual produto deseja buscar?: ")
 
-    if buscarProduto == nomeProduto:
-        for produto in produtos[tipoProduto][nomeProduto].values():
-            print(produto)
+    if buscarProduto == :
+        
     else: 
         print("Produto não encontrado ou não cadastrado!")
 
