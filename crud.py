@@ -17,7 +17,14 @@ cursor.execute("""INSERT INTO produtos (tipo, nome, valor, estoque) VALUES (?, ?
             valorProduto,
             qtdEstoque))
 
-cursor.execute("""SELECT nome, valor, estoque FROM produtos""")
-valores = cursor.fetchall()
+def mostrarProduto():
+    cursor.execute("""SELECT nome, valor, estoque FROM produtos""")
+    dados = cursor.fetchall()
+
+    for dado in dados:
+        print(dado)
+
+    cursor.close()
+    conexao.close()
 
 conexao.commit()
